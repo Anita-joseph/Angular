@@ -3,7 +3,7 @@
 h1 {
     font-size: 1.25rem;
     background-color: green;
-    height: 200px;
+    height: 80px;
     width: 100%;
     text-align: center;
     font-family: 'sans-serif';
@@ -19,12 +19,15 @@ nav {
 ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 li {
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    width: 120px;
 }
 
 .logo {

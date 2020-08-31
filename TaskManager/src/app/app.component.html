@@ -2,20 +2,21 @@
     <div class="logo">Angular TaskManager
     </div>
     <ul>
-        <li>Dashboard</li>
-        <li>About</li>
+        <li>
+            <a class="nav-link" routerLink="dashboard">
+           Dashboard
+        </a></li>
+        <li>
+            <a class="nav-link" routerLink="about">
+           About </a></li>
     </ul>
     <form>
         <label>Search:<input type="search"></label>
     </form>
 </nav>
-<h1>
-    Welcome to Taskmanager
-</h1>
-<div>
-    <app-dashboard>
-    </app-dashboard>
-</div>
-<div>
-    <app-about></app-about>
+<div class="container-fluid">
+
+    <h1> Welcome to Taskmanager
+    </h1>
+    <router-outlet></router-outlet>
 </div>
