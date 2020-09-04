@@ -1,0 +1,11 @@
+<p>contact-details-component works!</p>
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+    <input type="text" name="fullName" placeholder="Your full name" ngModel>
+
+    <input type="email" name="email" placeholder="Your email" ngModel>
+    <br />
+
+    <textarea name="message" placeholder="Your message" ngModel></textarea>
+    <br />
+    <button type="submit" routerLink="personal-details-comonent" value=" Send "></button>
+</form>

@@ -1,0 +1,23 @@
+a {
+    font-size: .75em;
+    text-decoration: none;
+    color: green;
+    width: 90px;
+    padding: 3px;
+}
+
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    border: 10px inset green;
+    padding: 3px;
+    background-image: linear-gradient(green to orange);
+}
+
+h1 {
+    color: #fff;
+    line-height: 122px;
+    height: 122px;
+}
