@@ -12,6 +12,8 @@ import { WizardFinished } from './wizard-finished-component/wizard-finished-comp
 import { WorkExperience } from './work-experience-component/work-experience-component.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { RouterModule } from '@angular/router';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,15 @@ import { RouterModule } from '@angular/router';
     WizardFinished,
     WorkExperience,
     ProductListComponent,
+    ProductAlertsComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
 	AppRoutingModule,
 	RouterModule.forRoot([
 		  { path: '', component: ProductListComponent },
+		  {path:'products/:productId',component: ProductDetailsComponent}
 	  ])
 
   ],
