@@ -10,6 +10,8 @@ import { PersonalDetails } from './personal-details-component/personal-details-c
 import { Skills } from './skills-component/skills-component.component';
 import { WizardFinished } from './wizard-finished-component/wizard-finished-component.component';
 import { WorkExperience } from './work-experience-component/work-experience-component.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,15 @@ import { WorkExperience } from './work-experience-component/work-experience-comp
     Skills,
     WizardFinished,
     WorkExperience,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+	AppRoutingModule,
+	RouterModule.forRoot([
+		  { path: '', component: ProductListComponent },
+	  ])
+
   ],
   providers: [],
   bootstrap: [AppComponent]

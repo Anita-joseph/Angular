@@ -7,6 +7,7 @@ import { PersonalDetails } from './personal-details-component/personal-details-c
 import { Skills } from './skills-component/skills-component.component';
 import{ WizardFinished } from './wizard-finished-component/wizard-finished-component.component';
 import { WorkExperience} from './work-experience-component/work-experience-component.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const routes: Routes = [
 {path:"dashboard", component:DashboardComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
 {path:"skills-component", component:Skills},
 {path:"wizard-finished-component", component:WizardFinished},
 {path:"work-experience-component", component:WorkExperience},
+{path:"product-list-component", component:ProductListComponent},
 {path:"", redirectTo:"dashboard", pathMatch:"full"}];
 
 @NgModule({
