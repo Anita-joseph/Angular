@@ -1,0 +1,7 @@
+<h2>Teams</h2>
+<!-- <p>{{team.name}}: {{getTeamPoints(team)}} points
+</p> -->
+<div *ngFor="let team of teams$ | async">
+    <h3>{{team.name}}</h3>
+    <p>{{team.description}}</p>
+</div>
